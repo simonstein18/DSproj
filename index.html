@@ -46,8 +46,8 @@ for first place. To analyze this battle, I looked through every matchday, calcul
 <p style="text-align:center"> I drew from <a href="https://datahub.io/sports-data/english-premier-league#resource-season-1516">datahub.io</a></p>
 
 <h1 style="text-align:center">2. The Structure</h1>
-<p style="text-align:center"> The data set was approximately 102kb in size encoded as a .csv files. I read the files line by line and stored the Home Team's name, Away Team's name, and the Winner or each game in a list.
-I then stored the team's name as the first element of each row in a two-dimmensional</p>
+<p style="text-align:center"> The data set was approximately 102kb in size encoded as a .csv file. I read the file line by line and stored the Home Team's name, Away Team's name, and the Winner of each game in a list.
+I then stored the team's name as the first element of each row in a two-dimensional</p>
 
     <pre><code style="color:rgb(255, 255, 255);">
 with open('/Users/simonneuwirth-stein/Desktop/season-1516.csv', 'r') as csvfile:
@@ -72,7 +72,7 @@ ary[i].append(0)
 
 <p style="text-align:center">
 I then looped through each game played throughout the season, aka list "keys".
-I added 3 to the Home Team's previous points in the row into the two-dimmensional array if they won,
+I added 3 to the Home Team's previous points in the row into the two-dimensional array if they won,
 0 if they lost, and 1 if they tied. And vice versa for the Away Team.
 </p>
 <pre><code style="color:rgb(255, 255, 255);">
@@ -100,7 +100,7 @@ for match in keys: #[Home Team, Away Team, Winner]
 
 <h1 style="text-align:center">3. The Analysis</h1>
 <pn style="text-align:center">
-The two-dimmensional array ended up looking like this:
+The two-dimensional array ended up looking like this:
 </p>
 <pre style="font-size: 60%"><code style="color:rgb(255, 255, 255);">
 ['Bournemouth', 0, 0, 1, 4, 5, 6, 9, 10, 11, 12, 12, 13, 13, 14, 15, 18, 21, 24, 25, 26, 27, 27, 30, 31, 34, 34, 34, 35, 38 ...]
@@ -126,7 +126,7 @@ The two-dimmensional array ended up looking like this:
 </pre></code>
 
 <h1 style="text-align:center">4. The Visualization</h1>
-<p>I decided to only plot the top 5 teams because with all the team in it, it became too complicated to analyze</p>
+<p>I decided to only plot the top 5 teams because with every team in it, it became too complicated to analyze</p>
 <pre style="text-align:left"><code style="color:rgb(255, 255, 255);">
 # libraries
 import matplotlib.pyplot as plt
